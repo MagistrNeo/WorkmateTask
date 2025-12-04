@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Основной скрипт для анализа эффективности разработчиков."""
 
 import argparse
@@ -66,4 +65,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
