@@ -25,9 +25,9 @@ pip install -r requirements.txt
 # Для разработки (опционально)
 pip install -r requirements-dev.txt
 
-### Базовый запуск
+# Базовый запуск
 python main.py --files employees.csv --report performance
 
-### Запуск с несколькими файлами
+# Запуск с несколькими файлами
 python main.py --files employees1.csv employees2.csv --report performance
 
