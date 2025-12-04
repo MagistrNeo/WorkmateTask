@@ -3,7 +3,12 @@
 import pytest
 import tempfile
 import os
-from src.validators import validate_files_exist
+import sys
+import os
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from validators import validate_files_exist
 
 
 def test_validate_files_exist():
@@ -12,7 +17,6 @@ def test_validate_files_exist():
         temp_file = f.name
     
     try:
-        # Должно пройти без исключений
         validate_files_exist([temp_file])
     finally:
         os.unlink(temp_file)
